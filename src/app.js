@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
+const router = require("./router");
 
 // CRIANDO AS ROTAS
-app.get("/", (request, response) => response.status(200).send("Olá Mundon"))
+app.use(router);
 
 module.exports = app;
