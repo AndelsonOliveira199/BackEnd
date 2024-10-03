@@ -1,4 +1,7 @@
 const express = require("express");
 const app = express();
 
-app.listen(3000, () => console.log("Servidor rodando na porta 3000"));
+// CRIANDO AS ROTAS
+app.get("/", (request, response) => response.status(200).send("Olá Mundon"))
+
+app.listen(2024, () => console.log("Servidor rodando na porta 2024"));
